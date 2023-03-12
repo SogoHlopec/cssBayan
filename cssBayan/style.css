@@ -39,6 +39,7 @@ input {
 }
 
 .mem__icon {
+  opacity: 0;
   width: 2rem;
   height: 2rem;
   background-repeat: no-repeat;
@@ -57,6 +58,10 @@ input {
 .container:hover .mem__title {
   color: black;
   cursor: pointer;
+}
+
+.container:hover .mem__icon {
+  opacity: 1;
 }
 
 .mem:hover,
@@ -84,6 +89,7 @@ input:checked ~ .label .mem__image {
 
 input:checked ~ .label .mem__title .mem__icon {
   transform: rotate(90deg);
+  opacity: 1;
 }
 
 /* !MEDIA */
@@ -96,8 +102,8 @@ input:checked ~ .label .mem__title .mem__icon {
     width: 90%;
   }
   .mem__image {
-  max-width: 95%;
-}
+    max-width: 95%;
+  }
 }
 
 @media (max-width: 320px) {
