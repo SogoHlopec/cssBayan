@@ -5,8 +5,12 @@
   margin: 0 2rem;
 }
 
-.mem {
+.container {
   width: 60%;
+}
+
+.mem {
+  width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -17,6 +21,12 @@ input {
   display: none;
 }
 
+.label {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
 .mem__title {
   width: 100%;
   display: flex;
@@ -44,8 +54,13 @@ input {
   transition: all 1s ease-in-out;
 }
 
+.container:hover .mem__title {
+  color: black;
+  cursor: pointer;
+}
+
 .mem:hover,
-.mem__title:hover {
+.label:hover {
   cursor: pointer;
 }
 
@@ -58,11 +73,15 @@ input {
   transform: rotate(90deg);
 }
 
-input:checked ~ .mem__image {
+input:checked ~ .label .mem__title {
+  color: black;
+}
+
+input:checked ~ .label .mem__image {
   max-height: 28rem;
   opacity: 1;
 }
 
-input:checked ~ .mem__title .mem__icon {
+input:checked ~ .label .mem__title .mem__icon {
   transform: rotate(90deg);
 }
