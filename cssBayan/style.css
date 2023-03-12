@@ -10,6 +10,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin-bottom: 0.5rem;
 }
 
 input {
@@ -33,9 +34,35 @@ input {
   background-repeat: no-repeat;
   background-size: cover;
   background-image: url("assets/icon/icon.svg");
+  transition: all 0.2s ease-in-out;
 }
 
 .mem__image {
   max-width: 28rem;
+  max-height: 0;
+  opacity: 0;
+  transition: all 1s ease-in-out;
+}
+
+.mem:hover,
+.mem__title:hover {
+  cursor: pointer;
+}
+
+.mem:hover .mem__image {
   max-height: 28rem;
+  opacity: 1;
+}
+
+.mem:hover .mem__icon {
+  transform: rotate(90deg);
+}
+
+input:checked ~ .mem__image {
+  max-height: 28rem;
+  opacity: 1;
+}
+
+input:checked ~ .mem__title .mem__icon {
+  transform: rotate(90deg);
 }
