@@ -5,7 +5,7 @@
 * https://github.com/DrDiman/CSS-Bayan-task
 
 ## Deploy:
-* https://sogohlopec.github.io/CSSBayan/
+* https://sogohlopec.github.io/cssBayan/
 
 ## Stack:
 * HTML5
