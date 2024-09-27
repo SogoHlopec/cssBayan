@@ -13,3 +13,9 @@
 
 ## Features:
 * CSS animation
+
+## Desktop
+![desktop](https://github.com/SogoHlopec/cssBayan/blob/main/desktop.jpg)
+
+## Mobile
+![mobile](https://github.com/SogoHlopec/cssBayan/blob/main/mobile.jpg)
